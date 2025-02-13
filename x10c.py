@@ -82,10 +82,12 @@ if not nome_usuario or not senha:
 # --- Funções de Conexão e Verificação no Banco ---
 def conectar_banco_de_dados():
     mydb = mysql.connector.connect(
-        host="127.0.0.1",
-        user="root",
-        password="fragmento676",
+        host="flashbot-jhoncostantine2016-5ea0.e.aivencloud.com",
+        port=26475,
+        user="avnadmin",
+        password="senhaq",  # Substitua pela senha real
         database="flashbot",
+        ssl_ca="C:/certificados/ca.pem",  # Ajuste o caminho conforme necessário
         use_pure=True
     )
     print("Conexão bem-sucedida!")
